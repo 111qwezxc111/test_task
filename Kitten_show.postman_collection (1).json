@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "cc814c73-63fd-4c42-b7c9-993a3be863ea",
+		"_postman_id": "0ae88138-76c7-4755-a606-9290389e9bfd",
 		"name": "Kitten_show",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_exporter_id": "32210918"
@@ -310,6 +310,43 @@
 						"kitten_show",
 						"kitten_delete",
 						"4",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/kitten_show/kitten_view/2/",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzI4MTcyMjE0LCJpYXQiOjE3MjgxNzA0MTQsImp0aSI6IjNhMDQ0YzY4ZmQ3MzQ4YzA5ZWZhZGIzZWIzODQyYzM3IiwidXNlcl9pZCI6Mn0.IDMd07mMkwU1pRajK4sm3H6Powt_rqTu5femaPtfnaE",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"grade\": 4\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/kitten_show/kitten_view/2/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"kitten_show",
+						"kitten_view",
+						"2",
 						""
 					]
 				}
